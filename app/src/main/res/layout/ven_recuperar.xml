@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imvCerrarR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_equis"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="10dp"
+        android:elevation="5dp"
+        android:layout_alignParentRight="true"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recuperar Contraseña"
+                android:textColor="@color/celeste_new"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/recuperarpass"
+                android:layout_gravity="center_horizontal"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="@color/letra_new"
+                android:layout_marginBottom="2dp"
+                android:padding="2dp"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tetUsuRecuperar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:textColorHint="@color/letra_new"
+                    android:textColor="@color/letra_new"
+                    android:imeOptions="actionDone"
+                    android:hint="DNI" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnRecuperarC"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordes"
+                android:backgroundTint="@color/celeste_new"
+                android:textColorHint="#ffffff"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:hint="Recuperar"/>
+
+            <!--<TextView
+                android:id="@+id/tvVeriR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#4F0B25"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:onClick="mensaje"
+                android:text="Ingresar Codigo Verificador"/>-->
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

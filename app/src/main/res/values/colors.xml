@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#5816B7</color>
+    <color name="colorAccent">#5816B7</color>
+    <color name="arriba">#4F0B25</color>
+
+    <color name="negro">#000000</color>
+    <color name="blanco">#ffffff</color>
+
+    <color name="marroninca">#4F0B25</color>
+    <color name="amarilloinca">#ECB404</color>
+
+    <color name="letra_new">#5816B7</color>
+    <color name="franja_new">#FDE306</color>
+    <color name="celeste_new">#1E96F2</color>
+
+    <!--<color name="colorPrimary">#ecb404</color>-->
+</resources>

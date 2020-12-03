@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "430460922277",
+    "firebase_url": "https://jamear-61865.firebaseio.com",
+    "project_id": "jamear-61865",
+    "storage_bucket": "jamear-61865.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430460922277:android:75307877dcf2dd188d204c",
+        "android_client_info": {
+          "package_name": "apps.incaclic.jamear"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "430460922277-l06npv22a9tmms835h787o92r8u6qan2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "apps.incaclic.jamear",
+            "certificate_hash": "2758372baed5e0a3417f6e6ef6a21b0dbb5919f1"
+          }
+        },
+        {
+          "client_id": "430460922277-7ejbncc8b89ddau875f6utirs3pfil65.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp_mr55Dp4xSnat5wx35o8Cb89sG3dPb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "430460922277-7ejbncc8b89ddau875f6utirs3pfil65.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

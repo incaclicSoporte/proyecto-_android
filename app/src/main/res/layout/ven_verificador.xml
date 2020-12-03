@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imvCerrarV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_equis"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="10dp"
+        android:elevation="5dp"
+        android:layout_alignParentRight="true"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/celeste_new"
+                android:text="Verificador de Contraseña"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=" 60"
+                    android:padding="2dp"
+                    android:textColorHint="@color/letra_new"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tetCodVerfiV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:textColorHint="@color/letra_new"
+                        android:textColor="@color/letra_new"
+                        android:imeOptions="actionDone"
+                        android:hint="Código Verificador" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <CheckBox
+                    android:id="@+id/rbVerificar"
+                    android:layout_width="0dp"
+                    android:layout_weight="40"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/celeste_new"
+                    android:text="Verificar"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Cambiar Contraseña"
+                android:textColor="@color/celeste_new"
+                android:textStyle="bold"
+                android:textSize="19sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                app:passwordToggleEnabled="true"
+                android:textColorHint="@color/letra_new"
+                app:passwordToggleTint="@color/letra_new"
+                android:padding="2dp"
+                android:layout_marginBottom="3dp"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tetNcCP"
+                    android:textColorHint="@color/letra_new"
+                    android:textColor="@color/letra_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:maxLength="100"
+                    android:enabled="false"
+                    android:hint="Nueva Contraseña" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleTint="@color/letra_new"
+                android:textColorHint="@color/letra_new"
+                android:padding="2dp"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tetRncCP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLength="100"
+                    android:enabled="false"
+                    android:textColorHint="@color/letra_new"
+                    android:textColor="@color/letra_new"
+                    android:hint="Repetir Nueva Contraseña" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnRestablecerV"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bordes"
+                android:backgroundTint="@color/celeste_new"
+                android:textColorHint="#ffffff"
+                android:textSize="20sp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:hint="Cambiar contraseña"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
